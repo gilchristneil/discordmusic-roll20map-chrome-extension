@@ -1,6 +1,16 @@
-import { printLine } from './modules/print';
+var roll20maps = document.getElementsByClassName("chooseablepage")
 
-console.log('Content script works!');
-console.log('Must reload extension for modifications to take effect.');
+for (const map in roll20maps) {
+  console.log(map.dataset.pageId);
+  console.log(map.innerText)
+}
 
-printLine("Using the 'printLine' function from the Print Module");
+
+//todo
+//build object with title and map id
+//send to db
+//how will discord bot communicate with chrome extension
+//how will we save data (link for yt vids and maps)
+//add listener for new maps (so user does not need to refresh to upload new maps)
+//
+
